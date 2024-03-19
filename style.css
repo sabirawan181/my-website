@@ -18,7 +18,7 @@ html, body{
     height: 100%;
     width: 100%;
     background-image: url(/images/autom.webp);
-    background-size: cover;
+    background-size: auto;
 }
 
 h1{
