@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .container {
+        height: 544px;
+        width: 100%;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: row;
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+        /* flex-flow: row-reverse wrap;  this is a shorthand for two values */
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
+        /* align-items: center; */
+        /* align-items: flex-end; */
+        /* align-items: start; */
+        /* align-items: stretch; */
+        /* align-items: first baseline; */
+      }
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: tomato;
+        border: 2px solid green;
+        margin: 10px;
+        padding: 2px;
+      }
+      /* item properties */
+      #item-1{
+        /* Higher the order, later it shows up in the container */
+        /* order: 35; */
+        /* flex-grow:2; */
+        /* flex-shrink: 5; */
+        align-self: center;
+      }
+      #item-2{
+        /* lower the order, early showsup in the container */
+        /* flex-grow: 2; */
+        /* flex-basis: 200px; */
+        align-self: flex-start;
+      }
+      #item-3{
+        /* lower the order, early showsup in the container */
+        /* order: 3; */
+        /* flex-grow: 3; */
+        /* flex-shrink: 2; */
+        /*flex shorthand */
+        /* flex: 2 3 200px;  */
+        /* align-self: self-start; */
+        /* align-self: self-end; */
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>this is a flexbox</h1>
+    <div class="container">
+      <div class="item" id="item-1">First</div>
+      <div class="item" id="item-2">Second</div>
+      <div class="item" id="item-3">Third</div>
+      <!-- <div class="item" id="item-3">forth</div> -->
+      <!-- <div class="item" id="item-3">fifth</div> -->
+      <!-- <div class="item" id="item-3">sixth</div> -->
+    </div>
+  </body>
+</html>

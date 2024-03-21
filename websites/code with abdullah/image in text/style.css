@@ -1,0 +1,18 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+h2 {
+  font-size: 80px;
+  font-weight: 900;
+
+  background-image: url(https://images.unsplash.com/photo-1597773150796-e5c14ebecbf5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YWJzdHJhY3QlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww);
+
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

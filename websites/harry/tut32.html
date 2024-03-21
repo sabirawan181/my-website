@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>attributes and nth chield pseudo selectors</title>
+    <style>
+      .container {
+        width: 233px;
+        padding: 34px;
+        margin: auto;
+        /* display: block; */
+      }
+      input {
+        display: block;
+      }
+
+      input[type="text"] {
+        background-color: aquamarine;
+        margin: 13px;
+        padding: 13px;
+        border: 2px solid green;
+      }
+      input[type="password"] {
+        background-color: aquamarine;
+        margin: 13px;
+        padding: 13px;
+        border: 2px solid green;
+      }
+      input[type="submit"] {
+        border-radius: 33px;
+        margin: 13px;
+        padding: 13px;
+        border: 2px solid green;
+      }
+      input[type="email"] {
+        background-color: aquamarine;
+        margin: 13px;
+        padding: 13px;
+        border: 2px solid green;
+      }
+      a[target] {
+        font-size: 35px;
+        color: rgb(186, 117, 129);
+      }
+      a[target="_self"] {
+        font-size: 15px;
+        color: rgb(36, 37, 86);
+      }
+      /* li:nth-child(3){
+        color: red;
+      } */
+      /* li:nth-child(2n+0){
+        color: red;
+      } */
+      li:nth-child(3n + 3) {
+        color: red;
+      }
+      li:nth-child(odd) {
+        background-color: purple;
+      }
+      li:nth-child(even) {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <a href="http://www.google.com" target="_blank">Go to Google</a>
+      </h1>
+      <h1>
+        <a href="http://www.facebook.com" target="_self">Go to facebook</a>
+      </h1>
+      <form action="" class="form-control"></form>
+      <input type="text" placeholder="Enter your name:" />
+      <input type="email" placeholder="Enter your email:" />
+      <input type="password" placeholder="Enter Your pasward" />
+      <input type="submit" value="submit now" />
+      <ul>
+        <li class="item" id="item-1">item1</li>
+        <li class="item" id="item-2">item2</li>
+        <li class="item" id="item-3">item3</li>
+        <li class="item" id="item-4">item4</li>
+        <li class="item" id="item-5">item5</li>
+        <li class="item" id="item-6">item6</li>
+        <li class="item" id="item-7">item7</li>
+        <li class="item" id="item-8">item8</li>
+        <li class="item" id="item-9">item9</li>
+        <li class="item" id="item-10">item10</li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media quaries</title>
+    <style>
+      .box {
+        font-size: 70px;
+        background-color: tomato;
+        text-align: center;
+        color: white;
+        display: none;
+      }
+      #box-1 {
+        @media only screen and (max-width: 500px) {
+          display: block;
+          background-color: aqua;
+        }
+      }
+      #box-2 {
+        @media only screen and (min-width: 500px) and (max-width: 1000px) {
+          display: block;
+          background-color: rgb(64, 58, 232);
+        }
+      }
+      #box-3 {
+        @media only screen and (min-width: 1000px) and (max-width: 2000px) {
+          display: block;
+          background-color: rgb(229, 232, 58);
+          color: black;
+        }
+      }
+      #box-4 {
+        @media only screen and (min-width: 2000px) and (max-width: 3000px) {
+          display: block;
+          background-color: rgb(177, 58, 232);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box-1">main aik iPhone hon</div>
+    <div class="box" id="box-2">main aik tablet hon</div>
+    <div class="box" id="box-3">main aik desktop computer hon</div>
+    <div class="box" id="box-4">main wide screen computer hon</div>
+  </body>
+</html>

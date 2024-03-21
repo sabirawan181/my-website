@@ -1,0 +1,21 @@
+*{
+    margin: 30;
+    padding: 30;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    counter-reset: myCount;
+}
+h1::before{
+    content: counter(myCount)". ";
+    counter-increment: myCount;
+}
+/* h1::after{
+    content: counter(myCount)". ";
+    counter-increment: myCount;
+} */
